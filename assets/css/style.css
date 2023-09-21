@@ -1,0 +1,139 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-family: "DM Sans", sans-serif;
+  background: #191919;
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: #FFF;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+
+._container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: content-box;
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+}
+
+/*--------------------------------------------------------------------------------------------------------------*/
+.header__container {
+  min-height: 119px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*--------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------*/
+.menu {
+  padding: 5px 0;
+}
+
+/*--------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------*/
+.menu__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*--------------------------------------------------------------------------------------------------------------*/
+.menu__item {
+  margin: 0 20px;
+}
+
+@media (max-width: 479px) {
+  .menu__item {
+    margin: 0 10px;
+  }
+}
+/*--------------------------------------------------------------------------------------------------------------*/
+.menu__link {
+  font-size: 0.94444444rem;
+  line-height: 158.8235294118%;
+}
+
+/*# sourceMappingURL=style.css.map */
