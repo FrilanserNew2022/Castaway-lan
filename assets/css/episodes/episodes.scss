@@ -1,0 +1,53 @@
+@import "../modules/episode";
+
+.page__episodes {
+  margin: 100px 0 0 0;
+}
+
+.episodes {
+
+}
+
+.episodes__container {
+
+}
+
+.episodes__title {
+}
+
+.latest-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+
+.latest-title__text {
+  color: #FFF;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 123.75%; /*  */
+  letter-spacing: 2.88px;
+}
+
+@media (max-width: 767.98px) {
+  .latest-title {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .latest-title__button {
+    margin: 30px 0 0 0;
+  }
+  .latest-title__text {
+    font-size: 50px;
+  }
+}
+
+
+.episodes__content {
+
+}
+
+.episodes__items {
+
+}

@@ -58,3 +58,9 @@
   font-size: 0.94444444rem;
   line-height: calc(27 / 17 * 100%);
 }
+
+@media (max-width: 479px) {
+  .menu__link {
+    font-size: 1.111111rem;
+  }
+}

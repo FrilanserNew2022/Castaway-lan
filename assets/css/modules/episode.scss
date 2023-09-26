@@ -1,0 +1,98 @@
+.episodes__item {
+  margin-top: 60px;
+  padding: 40px;
+}
+
+.episode {
+  border-radius: 32px;
+  background: #000;
+}
+
+.episode__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 1023.98px) {
+  .episode__container {
+    flex-direction: column;
+  }
+}
+
+.episode__img {
+  flex: 1 1 auto;
+  margin-right: 53px;
+  & img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 1023.98px) {
+  .episode__img {
+    margin: 0;
+  }
+}
+
+.episode__body {
+  max-width: 778px;
+}
+
+.episode__top-button {
+  margin-top: 7.56px;
+}
+
+.episode__top-link {
+  padding: 0 16px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /*  */
+  border-radius: 6px;
+  background: #191919;
+}
+
+.episode__numbering-txt {
+  margin-top: 48px;
+  color: #118DA8;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /*  */
+}
+
+.episode__title {
+  color: #FFF;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 110%; /*  */
+  letter-spacing: 2.56px;
+  margin-top: 18px;
+}
+
+@media (max-width: 1023.98px) {
+  .episode__title {
+    word-wrap: break-word;
+    font-size: 50px;
+  }
+}
+
+
+.episode__explanation-txt {
+  color: rgba(255, 255, 255, 0.70);
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 150%; /*  */
+  margin-top: 28px;
+}
+
+@media (max-width: 1023.98px) {
+  .episode__explanation-txt {
+    font-size: 20px;
+  }
+}
+
+.episode__view-button {
+  margin-top: 30px;
+}

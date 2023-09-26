@@ -1,0 +1,17 @@
+._button {
+  padding: 12px 15px 12px 20px;
+  color: #FFF;
+  font-family: 'DM Sans';
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 158.824%;
+  border-radius: 6px;
+  background: #118DA8;
+  box-sizing: content-box;
+}
+
+@media (max-width: 319.98px) {
+  ._button {
+    font-size: 14px;
+  }
+}
