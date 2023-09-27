@@ -161,7 +161,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 767.98px) {
   .page__main-block {
     margin: 140px 0 0 0;
-    min-height: 100%;
+    max-height: 100vh;
   }
 }
 .main-block {
@@ -396,9 +396,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .page__episodes {
-  margin: 100px 0 0 0;
+  padding: 100px 0;
 }
 
+@media (max-width: 767.98px) {
+  .page__episodes {
+    padding: 50px 0;
+  }
+}
 .latest-title {
   display: flex;
   justify-content: space-between;
@@ -425,6 +430,10 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 50px;
   }
 }
+.episodes__items:last-child {
+  margin: 60px 0 0 0;
+}
+
 ._button {
   padding: 12px 15px 12px 20px;
   color: #FFF;
@@ -440,6 +449,90 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 319.98px) {
   ._button {
     font-size: 14px;
+  }
+}
+.page__biography {
+  font-size: 18px;
+}
+
+.biography__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 100px;
+}
+
+@media (max-width: 1023.98px) {
+  .biography__container {
+    flex-direction: column;
+    padding-bottom: 50px;
+  }
+}
+.biography__body {
+  max-width: 590px;
+  margin: 0 60px 0 0;
+}
+
+@media (max-width: 1023.98px) {
+  .biography__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: none;
+    margin: 0 0 20px 0;
+  }
+}
+.biography__button-arrow {
+  display: block;
+  width: 112px;
+  height: 112px;
+  border-radius: 50%;
+  background: #118DA8 url("../images/decorators/IMAGEarrow.png") center no-repeat;
+}
+
+.biography__subtitle {
+  margin: 20px 0 0 0;
+  color: #118DA8;
+  font-size: 100%;
+  line-height: 150%; /* 27px */
+}
+
+.biography__title {
+  color: #FFF;
+  font-size: 361.1111111111%;
+  line-height: 121.846%; /* 79.2px */
+  letter-spacing: 2.88px;
+}
+
+.biography__txt {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 122.2222222222%;
+  line-height: 33px; /* 150% */
+}
+
+.biography__txt-first {
+  margin: 28px 0 0 0;
+}
+
+.biography__txt-second {
+  margin: 33px 0 0 0;
+}
+
+@media (max-width: 767.98px) {
+  .biography__button-arrow {
+    order: 2;
+  }
+  .biography__subtitle {
+    order: 3;
+  }
+  .biography__title {
+    order: 1;
+  }
+  .biography__txt-first {
+    order: 4;
+  }
+  .biography__txt-second {
+    order: 5;
   }
 }
 

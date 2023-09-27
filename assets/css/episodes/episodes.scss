@@ -1,7 +1,13 @@
 @import "../modules/episode";
 
 .page__episodes {
-  margin: 100px 0 0 0;
+  padding: 100px 0;
+}
+
+@media (max-width: 767.98px) {
+  .page__episodes {
+    padding: 50px 0;
+  }
 }
 
 .episodes {
@@ -49,5 +55,7 @@
 }
 
 .episodes__items {
-
+ &:last-child {
+   margin: 60px 0 0 0;
+ }
 }
