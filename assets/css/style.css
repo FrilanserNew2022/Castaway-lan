@@ -27,9 +27,7 @@ nav, footer, header, aside {
 html, body {
   height: 100%;
   width: 100%;
-  font-size: 100%;
   line-height: 1;
-  font-size: 14px;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -97,6 +95,36 @@ h1, h2, h3, h4, h5, h6 {
 
 .main {
   flex: 1 1 auto;
+}
+
+._button {
+  padding: 12px 15px 12px 20px;
+  color: #FFF;
+  font-family: "DM Sans";
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 158.824%;
+  border-radius: 6px;
+  background: #118DA8;
+  box-sizing: content-box;
+}
+
+@media (max-width: 319.98px) {
+  ._button {
+    font-size: 14px;
+  }
+}
+._input {
+  width: 100%;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28.8px; /* 120% */
+  border-radius: 6px;
+  border: 1px solid #191919;
+  padding: 26px 0 27px 19px;
+  background: #191919;
 }
 
 .header {
@@ -401,7 +429,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 767.98px) {
   .page__episodes {
-    padding: 50px 0;
+    padding: 50px 0 0 0;
   }
 }
 .latest-title {
@@ -431,41 +459,28 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 .episodes__items:last-child {
-  margin: 60px 0 0 0;
+  margin: 60px 0 60px 0;
 }
 
-._button {
-  padding: 12px 15px 12px 20px;
-  color: #FFF;
-  font-family: "DM Sans";
-  font-size: 17px;
-  font-weight: 400;
-  line-height: 158.824%;
-  border-radius: 6px;
-  background: #118DA8;
-  box-sizing: content-box;
-}
-
-@media (max-width: 319.98px) {
-  ._button {
-    font-size: 14px;
-  }
-}
 .page__biography {
   font-size: 18px;
+  padding: 100px 0;
 }
 
+@media (max-width: 767.98px) {
+  .page__biography {
+    padding: 50px 0;
+  }
+}
 .biography__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-bottom: 100px;
 }
 
 @media (max-width: 1023.98px) {
   .biography__container {
     flex-direction: column;
-    padding-bottom: 50px;
   }
 }
 .biography__body {
@@ -534,6 +549,113 @@ h1, h2, h3, h4, h5, h6 {
   .biography__txt-second {
     order: 5;
   }
+}
+.page__subscription-form {
+  padding: 100px 0;
+}
+
+@media (max-width: 767.98px) {
+  .page__subscription-form {
+    padding: 50px 0;
+  }
+}
+.subscription-form__content {
+  border-radius: 32px;
+  background: #000;
+  padding: 60px 60px 75px 60px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.subscription-form__content:before {
+  top: 26px;
+  left: -38px;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("../images/decorators/IMAGE.png") left bottom no-repeat;
+}
+
+@media (max-width: 1023.98px) {
+  .subscription-form__content {
+    padding: 40px 40px 55px 40px;
+    flex-direction: column;
+  }
+  .subscription-form__content:before {
+    display: none;
+  }
+}
+@media (max-width: 424.98px) {
+  .subscription-form__content {
+    padding: 20px 20px 50px 20px;
+  }
+}
+.subscription-form__body {
+  max-width: 431px;
+  z-index: 10;
+}
+
+@media (max-width: 1023.98px) {
+  .subscription-form__body {
+    max-width: none;
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+}
+.subscription-form__subtitle {
+  color: #118DA8;
+  font-size: 1rem;
+  line-height: 27px; /* 150% */
+}
+
+.subscription-form__title {
+  width: 100%;
+  color: #FFF;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%; /*79.2px*/
+  letter-spacing: 2.88px;
+}
+
+@media (max-width: 1023.98px) {
+  .subscription-form__subtitle {
+    margin-bottom: 5px;
+  }
+}
+@media (max-width: 767.98px) {
+  .subscription-form__title {
+    font-size: 50px;
+  }
+}
+@media (max-width: 424.98px) {
+  .subscription-form__title {
+    font-size: 40px;
+  }
+}
+.page__form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 522px;
+  z-index: 10;
+}
+
+@media (max-width: 1023.98px) {
+  .page__form {
+    max-width: none;
+    align-items: center;
+  }
+}
+.page__form_input-second {
+  margin-top: 20px;
+}
+
+.page__form_button {
+  max-width: 87px;
+  margin-top: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

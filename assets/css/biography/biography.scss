@@ -1,18 +1,24 @@
 .page__biography {
   font-size: 18px;
+  padding: 100px 0;
+}
+
+
+@media (max-width: 767.98px) {
+  .page__biography {
+    padding: 50px 0;
+  }
 }
 
 .biography__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-bottom: 100px;
 }
 
 @media (max-width: 1023.98px) {
   .biography__container {
     flex-direction: column;
-    padding-bottom: 50px;
   }
 }
 
