@@ -70,8 +70,6 @@ ul li {
 
 img {
   vertical-align: top;
-  height: 100%;
-  width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -533,6 +531,11 @@ h1, h2, h3, h4, h5, h6 {
   margin: 33px 0 0 0;
 }
 
+.biography__img-container img {
+  width: 100%;
+  height: 100%;
+}
+
 @media (max-width: 767.98px) {
   .biography__button-arrow {
     order: 2;
@@ -708,6 +711,77 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 424.98px) {
   .comment__name {
     font-size: 1rem;
+  }
+}
+.footer__container {
+  padding: 100px 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__separation {
+  display: none;
+}
+
+@media (max-width: 767.98px) {
+  .footer__container {
+    padding: 50px 15px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.footer__logo {
+  flex-basis: 34.3954615385%;
+}
+
+.footer__logo_socialnetwork {
+  margin-top: 23px;
+  display: flex;
+}
+
+.twit-img {
+  margin: 0 4px 0 10px;
+}
+
+.footer__menu_list {
+  flex-direction: column;
+}
+
+.footer__list {
+  flex-direction: column;
+}
+
+.menu__item-footer {
+  margin: 0;
+}
+.menu__item-footer:not(:first-child) {
+  margin-top: 10px;
+}
+
+.icon-container__list {
+  flex-basis: 34.3954615385%;
+}
+
+@media (max-width: 767.98px) {
+  .footer__separation {
+    display: block;
+    margin: 20px 0;
+    font-size: 25px;
+    position: relative;
+    text-align: left;
+  }
+  .footer__separation:after {
+    top: 100%;
+    left: 0;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #118DA8;
+  }
+  .icon-container__list {
+    margin-top: 20px;
+    flex-basis: auto;
   }
 }
 
