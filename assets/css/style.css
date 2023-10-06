@@ -284,7 +284,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 0 -100%;
   content: "";
   position: absolute;
-  background-image: url("../images/decorators/raysUnderTxt.svg");
+  background: url("../images/decorators/raysUnderTxt.svg") 0 0/auto 100% no-repeat;
   z-index: 2;
 }
 
